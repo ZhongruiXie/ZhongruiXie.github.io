@@ -1,39 +1,34 @@
-name: Deploy Hugo site to GitHub Pages
+name: Build and Deploy
 
 on:
   push:
     branches:
-      - master    # ⚡ 你的源码分支，推送后触发部署（比如 master 或 main）
+      - master  # 你开发的时候在 master 分支上
 
 permissions:
-  contents: write   # 允许写入（推gh-pages分支）
+  contents: write  # 允许push
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout source code
-      uses: actions/checkout@v4
-      with:
-        submodules: true  # ⚡ 拉取 Hugo themes 子模块（如果有的话）
-        fetch-depth: 0    # ⚡ 拉取全部提交记录，方便 Hugo 生成
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: '0.147.0'
-        extended: true    # ⚡ 使用 extended 版，支持SASS/SCSS
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.147.0'
+          extended: true
 
-    - name: Build Hugo site
-      run: hugo --minify
+      - name: Build
+        run: hugo --minify
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        personal_token: ${{ secrets.XZR_TOKEN }}  # ⚡ 用你自己生成的 Token！
-        external_repository: ZhongruiXie/ZhongruiXie.github.io  # ⚡ 写自己的 仓库名
-        publish_dir: ./public    # ⚡ Hugo 默认输出的目录
-        publish_branch: gh-pages # ⚡ 部署分支（一般是 gh-pages）
-        user_name: "ZhongruiXie" # ⚡ 你的 GitHub 用户名
-        user_email: "xzr0518@outlook.com"  # ⚡ 你的 GitHub 邮箱
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: master   # 注意！部署回 master 分支（小心覆盖）
+          force_orphan: true        # 保证干净部署，不留历史

@@ -31,7 +31,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
-        personal_token: ${{ secrets.PERSONAL_TOKEN }}  # ⚡ 用你自己生成的 Token！
+        personal_token: ${{ secrets.xzr_token }}  # ⚡ 用你自己生成的 Token！
         external_repository: ZhongruiXie/ZhongruiXie.github.io  # ⚡ 写自己的 仓库名
         publish_dir: ./public    # ⚡ Hugo 默认输出的目录
         publish_branch: gh-pages # ⚡ 部署分支（一般是 gh-pages）

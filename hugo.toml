@@ -10,6 +10,17 @@ theme = "PaperMod"
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowToc = true
+  [params.homeInfoParams]
+    Title = "你好呀！"
+    Content = "这里分享一些技术笔记和生活感悟..."
+    ShowInHome = true
+    ShowInSidebar = false
+    Style = "card"
+    Image = "/images/logo.jpg"
+
+  [[params.socialIcons]]
+    name = "GitHub"
+    url = "https://github.com/ZhongruiXie"
 
 [menu]
   [[menu.main]]

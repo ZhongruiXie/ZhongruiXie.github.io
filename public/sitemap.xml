@@ -2,28 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ZhongruiXie.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-04-28T00:22:24+08:00</lastmod>
   </url><url>
-    <loc>https://ZhongruiXie.github.io/tags/hugo/</loc>
+    <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2025-04-28T00:22:24+08:00</lastmod>
   </url><url>
-    <loc>https://ZhongruiXie.github.io/tags/papermod/</loc>
+    <loc>http://localhost:1313/tags/papermod/</loc>
     <lastmod>2025-04-28T00:22:24+08:00</lastmod>
   </url><url>
-    <loc>https://ZhongruiXie.github.io/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-04-28T00:22:24+08:00</lastmod>
   </url><url>
-    <loc>https://ZhongruiXie.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-04-28T00:22:24+08:00</lastmod>
   </url><url>
-    <loc>https://ZhongruiXie.github.io/categories/%E6%97%A0%E6%89%80%E5%B1%9E/</loc>
+    <loc>http://localhost:1313/categories/%E6%97%A0%E6%89%80%E5%B1%9E/</loc>
     <lastmod>2025-04-28T00:22:24+08:00</lastmod>
   </url><url>
-    <loc>https://ZhongruiXie.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-04-28T00:22:24+08:00</lastmod>
   </url><url>
-    <loc>https://ZhongruiXie.github.io/posts/my-first-post/</loc>
+    <loc>http://localhost:1313/posts/my-first-post/</loc>
     <lastmod>2025-04-28T00:22:24+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/archives/</loc>
   </url>
 </urlset>

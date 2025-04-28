@@ -2,19 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on 这个是我的网站哦</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://ZhongruiXie.github.io/posts/</link>
     <description>Recent content in Posts on 这个是我的网站哦</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 28 Apr 2025 16:12:41 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ZhongruiXie.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何搭建个人网页</title>
-      <link>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/</link>
+      <link>https://ZhongruiXie.github.io/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/</link>
       <pubDate>Mon, 28 Apr 2025 16:12:41 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/</guid>
-      <description>&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h1 id=&#34;写在前面&#34;&gt;写在前面&lt;/h1&gt;
+      <guid>https://ZhongruiXie.github.io/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/</guid>
+      <description>&lt;h1 id=&#34;写在前面&#34;&gt;写在前面&lt;/h1&gt;
 &lt;p&gt;​	这个是记录一下自己如何搭网站的，当作一个教程和备忘，防止自己忘记怎么搭了。&lt;/p&gt;
 &lt;p&gt;​	其实之前用hoxe安装过，用的是Next主题，但是换电脑的时候想迁过来有点麻烦，我就删了原来的，Github库也删了，因为不熟悉操作，重建一个干净了事。上次看主页还是一年多，所以基本什么全忘了，从Windows到Mac的系统一些操作也变了，干脆换成Hugo框架。（DeepSeek说go语言更好用，Jekyll也试过了但是总是有奇怪的问题，Hugo赢了。）&lt;/p&gt;
 &lt;p&gt;​	感谢DeepSeek和ChatGPT的支持，结合网上的教程来看，教了我做很多。&lt;/p&gt;
@@ -23,9 +22,9 @@
     </item>
     <item>
       <title>这里应该要有一个标题</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>https://ZhongruiXie.github.io/posts/my-first-post/</link>
       <pubDate>Mon, 28 Apr 2025 00:22:24 +0800</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>https://ZhongruiXie.github.io/posts/my-first-post/</guid>
       <description>&lt;p&gt;这个是我的第一个博客&lt;/p&gt;
 &lt;p&gt;应该有一些东西&lt;/p&gt;
 &lt;p&gt;。。。&lt;/p&gt;

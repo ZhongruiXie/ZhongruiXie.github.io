@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head>
-	<meta name="generator" content="Hugo 0.147.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>这个是我的网站哦</title>
-
-<meta name="description" content="">
+<title>如何搭建个人网页 | 这个是我的网站哦</title>
+<meta name="keywords" content="Hugo, PaperMod, Github">
+<meta name="description" content="[TOC]
+写在前面
+​	这个是记录一下自己如何搭网站的，当作一个教程和备忘，防止自己忘记怎么搭了。
+​	其实之前用hoxe安装过，用的是Next主题，但是换电脑的时候想迁过来有点麻烦，我就删了原来的，Github库也删了，因为不熟悉操作，重建一个干净了事。上次看主页还是一年多，所以基本什么全忘了，从Windows到Mac的系统一些操作也变了，干脆换成Hugo框架。（DeepSeek说go语言更好用，Jekyll也试过了但是总是有奇怪的问题，Hugo赢了。）
+​	感谢DeepSeek和ChatGPT的支持，结合网上的教程来看，教了我做很多。
+第一部分
+​	待定">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/">
+<link rel="canonical" href="http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -19,9 +24,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
-<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<link rel="alternate" type="application/json" href="http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/index.json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/">
 <noscript>
     <style>
         #theme-toggle,
@@ -61,7 +65,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -103,7 +107,7 @@
         <ul id="menu">
             <li>
                 <a href="http://localhost:1313/" title="首页">
-                    <span class="active">首页</span>
+                    <span>首页</span>
                 </a>
             </li>
             <li>
@@ -124,67 +128,60 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<article class="first-entry home-info">
-    <header class="entry-header">
-        <h1>你好呀！</h1>
-    </header>
-    <div class="entry-content">
-        这里分享一些技术笔记和生活感悟&hellip;
-    </div>
-    <footer class="entry-footer">
-        <div class="social-icons" >
-    <a href="https://github.com/ZhongruiXie" target="_blank" rel="noopener noreferrer me"
-        title="GitHub">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path
-        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-    </path>
-</svg>
-    </a>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      如何搭建个人网页
+    </h1>
+    <div class="post-meta"><span title='2025-04-28 16:12:41 +0800 CST'>April 28, 2025</span>&nbsp;·&nbsp;1 min
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%86%99%e5%9c%a8%e5%89%8d%e9%9d%a2" aria-label="写在前面">写在前面</a></li>
+                <li>
+                    <a href="#%e7%ac%ac%e4%b8%80%e9%83%a8%e5%88%86" aria-label="第一部分">第一部分</a>
+                </li>
+            </ul>
+        </div>
+    </details>
 </div>
 
-    </footer>
-</article>
+  <div class="post-content"><p>[TOC]</p>
+<h1 id="写在前面">写在前面<a hidden class="anchor" aria-hidden="true" href="#写在前面">#</a></h1>
+<p>​	这个是记录一下自己如何搭网站的，当作一个教程和备忘，防止自己忘记怎么搭了。</p>
+<p>​	其实之前用hoxe安装过，用的是Next主题，但是换电脑的时候想迁过来有点麻烦，我就删了原来的，Github库也删了，因为不熟悉操作，重建一个干净了事。上次看主页还是一年多，所以基本什么全忘了，从Windows到Mac的系统一些操作也变了，干脆换成Hugo框架。（DeepSeek说go语言更好用，Jekyll也试过了但是总是有奇怪的问题，Hugo赢了。）</p>
+<p>​	感谢DeepSeek和ChatGPT的支持，结合网上的教程来看，教了我做很多。</p>
+<h1 id="第一部分">第一部分<a hidden class="anchor" aria-hidden="true" href="#第一部分">#</a></h1>
+<p>​	待定</p>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">如何搭建个人网页
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>[TOC]
-写在前面 ​	这个是记录一下自己如何搭网站的，当作一个教程和备忘，防止自己忘记怎么搭了。
-​	其实之前用hoxe安装过，用的是Next主题，但是换电脑的时候想迁过来有点麻烦，我就删了原来的，Github库也删了，因为不熟悉操作，重建一个干净了事。上次看主页还是一年多，所以基本什么全忘了，从Windows到Mac的系统一些操作也变了，干脆换成Hugo框架。（DeepSeek说go语言更好用，Jekyll也试过了但是总是有奇怪的问题，Hugo赢了。）
-​	感谢DeepSeek和ChatGPT的支持，结合网上的教程来看，教了我做很多。
-第一部分 ​	待定
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-28 16:12:41 +0800 CST'>April 28, 2025</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to 如何搭建个人网页" href="http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/"></a>
-</article>
 
-<article class="post-entry"> 
-<figure class="entry-cover">
-        <img loading="lazy" src="http://localhost:1313/images/cover1.jpg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">这里应该要有一个标题
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>这个是我的第一个博客
-应该有一些东西
-。。。
-现在没有
-。。。
-以后会有的
-。。。
-</p>
   </div>
-  <footer class="entry-footer"><span title='2025-04-28 00:22:24 +0800 CST'>April 28, 2025</span>&nbsp;·&nbsp;1 min</footer>
-  <a class="entry-link" aria-label="post link to 这里应该要有一个标题" href="http://localhost:1313/posts/my-first-post/"></a>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
+      <li><a href="http://localhost:1313/tags/papermod/">PaperMod</a></li>
+      <li><a href="http://localhost:1313/tags/github/">Github</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/my-first-post/">
+    <span class="title">Next »</span>
+    <br>
+    <span>这里应该要有一个标题</span>
+  </a>
+</nav>
+
+  </footer>
 </article>
     </main>
     
@@ -256,6 +253,53 @@
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 

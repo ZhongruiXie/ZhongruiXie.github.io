@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>PaperMod on 这个是我的网站哦</title>
-    <link>http://localhost:1313/tags/papermod/</link>
-    <description>Recent content in PaperMod on 这个是我的网站哦</description>
+    <title>Github on 这个是我的网站哦</title>
+    <link>http://localhost:1313/categories/github/</link>
+    <description>Recent content in Github on 这个是我的网站哦</description>
     <generator>Hugo -- 0.147.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 28 Apr 2025 16:12:41 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何搭建个人网页</title>
       <link>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/</link>
@@ -20,19 +20,6 @@
 &lt;p&gt;​	感谢DeepSeek和ChatGPT的支持，结合网上的教程来看，教了我做很多。&lt;/p&gt;
 &lt;h1 id=&#34;第一部分&#34;&gt;第一部分&lt;/h1&gt;
 &lt;p&gt;​	待定&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>这里应该要有一个标题</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Mon, 28 Apr 2025 00:22:24 +0800</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;p&gt;这个是我的第一个博客&lt;/p&gt;
-&lt;p&gt;应该有一些东西&lt;/p&gt;
-&lt;p&gt;。。。&lt;/p&gt;
-&lt;p&gt;现在没有&lt;/p&gt;
-&lt;p&gt;。。。&lt;/p&gt;
-&lt;p&gt;以后会有的&lt;/p&gt;
-&lt;p&gt;。。。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

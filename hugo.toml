@@ -5,18 +5,29 @@ theme = "PaperMod"
 [params]
   defaultTheme = "auto" # 支持 "light" | "dark" | "auto"
   ShowReadingTime = true
-  ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
   ShowToc = true
+  TocOpen = true
+  enableSearch = true
+  searchType = "fuse"  
+  searchResultLength = 15
   [params.homeInfoParams]
     Title = "你好呀！"
     Content = "这里分享一些技术笔记和生活感悟..."
     ShowInHome = true
     ShowInSidebar = false
     Style = "card"
-    Image = "/images/logo.jpg"
+
+  [params.search]
+    includeContent = true  
+    includeFuzzy = true    
+    limitResults = 20 
+
+  [params.cover]
+    responsiveImages = false 
+    linkFullImages = true
 
   [[params.socialIcons]]
     name = "GitHub"
@@ -25,12 +36,26 @@ theme = "PaperMod"
 [menu]
   [[menu.main]]
     identifier = "archives"
-    name = "Archives"
+    name = "归档"
     url = "/archives/"
     weight = 10
 
   [[menu.main]]
     identifier = "tags"
-    name = "Tags"
+    name = "关键词"
     url = "/tags/"
     weight = 20
+
+  [[menu.main]]
+  name = "搜索"
+  url = "/search/"
+  weight = 30
+
+  [[menu.main]]
+  name = "首页"
+  url = "/"
+  weight = 1
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]  
+  page = ["HTML", "JSON"]        

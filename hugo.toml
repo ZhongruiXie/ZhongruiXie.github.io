@@ -12,7 +12,7 @@ theme = "PaperMod"
   TocOpen = true
   enableSearch = true
   searchType = "fuse"  
-  searchResultLength = 15
+  searchResultLength = 20
   [params.homeInfoParams]
     Title = "你好呀！"
     Content = "这里分享一些技术笔记和生活感悟..."
@@ -27,7 +27,7 @@ theme = "PaperMod"
 
   [params.cover]
     responsiveImages = false 
-    linkFullImages = true
+    linkFullImages = false
 
   [[params.socialIcons]]
     name = "GitHub"

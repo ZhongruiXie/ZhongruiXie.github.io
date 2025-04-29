@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>这个是我的网站哦</title><link>https://ZhongruiXie.github.io/</link><description>Recent content on 这个是我的网站哦</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 28 Apr 2025 16:12:41 +0800</lastBuildDate><atom:link href="https://ZhongruiXie.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>如何搭建个人网页</title><link>https://ZhongruiXie.github.io/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/</link><pubDate>Mon, 28 Apr 2025 16:12:41 +0800</pubDate><guid>https://ZhongruiXie.github.io/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E9%A1%B5/</guid><description>&lt;h1 id="写在前面">写在前面&lt;/h1>
+&lt;p>​	这个是记录一下自己如何搭网站的，当作一个教程和备忘，防止自己忘记怎么搭了。&lt;/p>
+&lt;p>​	其实之前用hoxe安装过，用的是Next主题，但是换电脑的时候想迁过来有点麻烦，我就删了原来的，Github库也删了，因为不熟悉操作，重建一个干净了事。上次看主页还是一年多，所以基本什么全忘了，从Windows到Mac的系统一些操作也变了，干脆换成Hugo框架。（DeepSeek说go语言更好用，Jekyll也试过了但是总是有奇怪的问题，还是做Hugo吧。）&lt;/p>
+&lt;p>​	感谢DeepSeek和ChatGPT的支持，结合网上的教程来看，教了我做很多。&lt;/p>
+&lt;h1 id="一hugo安装">一、Hugo安装&lt;/h1>
+&lt;h2 id="1安装homebrew">（1）安装Homebrew&lt;/h2>
+&lt;p>​	homebrew是一个Mac上很好用的安装软件，很多可以用这个来下载。打开终端，输入下面的代码。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 安装 Homebrew（如果未安装）&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>/bin/bash -c &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span style="color:#66d9ef">)&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 可以网上找找Homebrew的安装教程，第一次安装可能需要一些配置&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="2安装hogo和git">（2）安装Hogo和Git&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>brew install hugo git
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 简单一步就搞定&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 验证安装&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugo version &lt;span style="color:#75715e"># 应显示类似 hugo v0.125.4+extended&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git --version &lt;span style="color:#75715e"># 应显示 git 版本&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="3配置全局git身份">（3）配置全局Git身份&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git config --global user.name &lt;span style="color:#e6db74">&amp;#34;你的GitHub用户名&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git config --global user.email &lt;span style="color:#e6db74">&amp;#34;你的GitHub注册邮箱&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="二搭建本地hugo项目">二、搭建本地Hugo项目&lt;/h1>
+&lt;h2 id="1创建hugo项目">（1）创建Hugo项目&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 转到根目录（也可以根据自己想要的位置转到那里，如Document等）&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cd ~ 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 创建项目文件夹（这个是在当前目录下创建了一个叫my-hugo-blog的文件夹）&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugo new site my-hugo-blog &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> cd my-hugo-blog
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 初始化 Git&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>git init
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="2配置主题">（2）配置主题&lt;/h2>
+&lt;p>​	可以根据自己的喜好，选择一个自己喜欢的主题。&lt;/p></description></item><item><title>这里应该要有一个标题</title><link>https://ZhongruiXie.github.io/posts/my-first-post/</link><pubDate>Mon, 28 Apr 2025 00:22:24 +0800</pubDate><guid>https://ZhongruiXie.github.io/posts/my-first-post/</guid><description>&lt;p>这个是我的第一个博客&lt;/p>
+&lt;p>应该有一些东西&lt;/p>
+&lt;p>。。。&lt;/p>
+&lt;p>现在没有&lt;/p>
+&lt;p>。。。&lt;/p>
+&lt;p>以后会有的&lt;/p>
+&lt;p>。。。&lt;/p></description></item><item><title>归档</title><link>https://ZhongruiXie.github.io/archives/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ZhongruiXie.github.io/archives/</guid><description>archives</description></item><item><title>搜索</title><link>https://ZhongruiXie.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ZhongruiXie.github.io/search/</guid><description>search</description></item></channel></rss>

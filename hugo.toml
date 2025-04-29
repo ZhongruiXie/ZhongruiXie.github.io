@@ -5,6 +5,7 @@ theme = "PaperMod"
 [params]
   defaultTheme = "auto" # 支持 "light" | "dark" | "auto"
   ShowReadingTime = true
+  ShowPageNums = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true

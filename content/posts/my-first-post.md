@@ -2,6 +2,7 @@
 date = '2025-04-28T00:22:24+08:00'
 draft = false
 title = '这里应该要有一个标题'
+author = "xzr"
 tags = ["Hugo", "PaperMod"]
 categories =  ["无所属"]
 [cover]
